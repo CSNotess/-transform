@@ -1,0 +1,72 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*  settings */
+.body
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+}
+
+.body div
+{
+    margin: 5px;
+    padding: 10px;
+    height: 100px;
+    width: 150px;
+    background-color: rgb(96, 4, 7);
+    border: 2px black solid;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body div p
+{
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.translate:active
+{
+    /* the translation has been set on the y-axis, meaning itll move vertically */
+    transform: translateY(-200px);
+    transition: ease-in-out;
+    transition-duration: 1.5s;
+}
+
+.scale:active
+{
+    /* the scale has been set to default, meaning itll scale on all sides */
+    transform: scale(1.5);
+    transition: ease-in;
+    transition-duration: 1s;
+}
+
+.rotate:hover
+{
+    /* the command has been set to default, which means that the rotation of the object is
+    referencing the computer, which is on the z-axis which will be rotating on the z-axis */
+    transform: rotate(360deg);
+    transition: ease-out;
+    transition-duration: 1s;
+}
+
+.skew:active
+{
+    /* this skew is referencing the x-axis, meaning itll be skewed horizontally */
+    transform: skewX(20deg);
+    transition: linear;
+    transition-duration: 1s;
+}
